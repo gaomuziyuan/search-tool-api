@@ -8,9 +8,7 @@ const xml2js = require("xml2js");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(
-  cors({ origin: ["https://gaomuziyuan.github.io", "http://localhost:3000"] })
-);
+app.use(cors({ origin: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
