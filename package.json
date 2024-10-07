@@ -5,6 +5,9 @@
   "repository": "https://github.com/gaomuziyuan/search-tool-api.git",
   "author": "gaomuziyuan <muziyuangao@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "axios": "^1.7.7",
     "cors": "^2.8.5",
