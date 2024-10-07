@@ -13,6 +13,10 @@ app.use(
 );
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Search Tool API");
+});
+
 app.get("/api/search", async (req, res) => {
   const query = req.query.q;
   if (!query) {
